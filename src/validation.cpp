@@ -1301,7 +1301,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     // Instamine protection
     else if (nPrevHeight > 0 && nPrevHeight <= 100) nSubsidyBase = 0;
 
-    // Hard supply
+    // Hard supply: 26.790.492
     else if (nPrevHeight > 2232541) nSubsidyBase = 0;
 
     // LogPrintf("height %u diff %4.2f reward %d\n", nPrevHeight, dDiff, nSubsidyBase);
